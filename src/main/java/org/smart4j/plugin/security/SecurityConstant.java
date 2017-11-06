@@ -16,4 +16,12 @@ public interface SecurityConstant {
 
     String JDBC_AUTHC_QUERY = "smart.plugin.security.jdbc.authc_query";
 
+    String JDBC_ROLES_QUERY = "smart.plugin.security.jdbc.roles_query";
+
+    String JDBC_PERMISSIONS_QUERY = "smart.plugin.security.jdbc.permissions_query";
+
+    String CACHE = "smart.plugin.security.cache";
+
+
+
 }
