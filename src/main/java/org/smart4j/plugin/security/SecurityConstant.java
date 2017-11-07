@@ -22,6 +22,6 @@ public interface SecurityConstant {
 
     String CACHE = "smart.plugin.security.cache";
 
-
+    
 
 }

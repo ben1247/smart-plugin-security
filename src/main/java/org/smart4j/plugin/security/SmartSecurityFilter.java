@@ -7,6 +7,7 @@ import org.apache.shiro.mgt.RealmSecurityManager;
 import org.apache.shiro.realm.Realm;
 import org.apache.shiro.web.mgt.WebSecurityManager;
 import org.apache.shiro.web.servlet.ShiroFilter;
+import org.smart4j.plugin.security.realm.SmartCustomRealm;
 import org.smart4j.plugin.security.realm.SmartJdbcRealm;
 
 import java.util.LinkedHashSet;
@@ -69,7 +70,7 @@ public class SmartSecurityFilter extends ShiroFilter {
 
     private void setCache(WebSecurityManager webSecurityManager){
         // 读取smart.plugin.security.cache 配置项
-        if (SecurityConfig.isCache()){
+        if (SecurityConfig.isCacheable()){
             CachingSecurityManager cachingSecurityManager = (CachingSecurityManager)webSecurityManager;
             // 使用基于内存的CacheManager
             CacheManager cacheManager = new MemoryConstrainedCacheManager();
