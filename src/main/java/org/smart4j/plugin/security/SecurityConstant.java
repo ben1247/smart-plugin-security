@@ -20,7 +20,7 @@ public interface SecurityConstant {
 
     String JDBC_PERMISSIONS_QUERY = "smart.plugin.security.jdbc.permissions_query";
 
-    String CACHE = "smart.plugin.security.cache";
+    String SECURITY_CACHE = "smart.plugin.security.cache";
 
     
 
